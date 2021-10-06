@@ -1,0 +1,14 @@
+{
+  "name": "jestlearn",
+  "version": "1.0.0",
+  "main": "",
+  "repository": "git@github.com:11zouzouzou/jestLearn.git",
+  "author": "zouzouzou11 <1096174991@qq.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^27.2.4"
+  }
+}
