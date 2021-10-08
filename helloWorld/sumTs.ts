@@ -6,7 +6,10 @@ export function sumTS(a: number, b: number) {
 
 class THREETEST {
   camera: PerspectiveCamera;
+  canvas: HTMLCanvasElement;
   constructor() {
+    this.canvas = document.createElement("canvas");
+    const context = this.canvas.getContext("webgl2");
     this.camera = new PerspectiveCamera();
   }
 

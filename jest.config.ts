@@ -26,9 +26,7 @@ export default {
   coverageDirectory: "coverage",
 
   // An array of regexp pattern strings used to skip coverage collection
-  // coveragePathIgnorePatterns: [
-  //   "/node_modules/"
-  // ],
+  coveragePathIgnorePatterns: ["/node_modules/"],
 
   // Indicates which provider should be used to instrument code for coverage
   //v8 cannot need ts-node
@@ -124,6 +122,12 @@ export default {
 
   // Allows you to use a custom runner instead of Jest's default test runner
   // runner: "jest-runner",
+  // runner: "jest-electron/runner",
+  // testEnvironment: "jest-electron/environment",
+  // runner: '@jest-runner/electron/main',
+  // testEnvironment: 'node',
+  runner: "@jest-runner/electron",
+  testEnvironment: "@jest-runner/electron/environment",
 
   // The paths to modules that run some code to configure or set up the testing environment before each test
   // setupFiles: [],
